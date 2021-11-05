@@ -1,0 +1,20 @@
+.wrapper{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.counterScore{
+    user-select: none;
+    text-shadow: 4px 0px 0px black;
+    font-size: 90px;
+    color: #fff;
+}
+
+.counterScore._active{
+    transition: 0.1s ease all;
+    font-size: 110px;
+    color: #fbff01;
+}
