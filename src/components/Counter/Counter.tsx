@@ -1,37 +1,35 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import s from './Counter.module.css'
 import CounterTable from "./CounterTable/CounterTable";
 import MyButton from "../UI/MyButton/MyButton";
 
 type CounterPropsType = {
 	maxCount: number
+	minCount: number
 	incrementCount: number
 }
 
-const Counter: React.FC<CounterPropsType> = ({maxCount, incrementCount}) => {
-	const [count, setCount] = useState<number>(0);
+const Counter: React.FC<CounterPropsType> = ({maxCount, incrementCount, minCount}) => {
+	const [count, setCount] = useState<number>(minCount);
 
 	const increment = (inc: number) => {
-		if(count < maxCount){
-			let result = count + inc
-			setCount(result)
-			if(count + inc > maxCount){
+		if (count < maxCount) {
+			setCount(count + inc)
+			if (count + inc > maxCount) {
 				setCount(maxCount)
 			}
 		}
 	}
 	const reset = () => {
-		setCount(0)
+		setCount(minCount)
 	}
 
 	return (
 		<div className={s.wrapper}>
-			<div className={s.body}>
-				<CounterTable maxCount={maxCount} count={count}/>
-				<div className={s.buttons}>
-					<MyButton disabled={ count === 0 }  onClickButton={reset}>Сбросить</MyButton>
-					<MyButton disabled={ count === maxCount } onClickButton={() => increment(incrementCount)}>+{incrementCount}</MyButton>
-				</div>
+			<CounterTable maxCount={maxCount} count={count}/>
+			<div className={s.buttons}>
+				<MyButton disabled={count === minCount} onClickButton={reset}>Сбросить</MyButton>
+				<MyButton disabled={count === maxCount} onClickButton={() => increment(incrementCount)}>+{incrementCount}</MyButton>
 			</div>
 		</div>
 	);

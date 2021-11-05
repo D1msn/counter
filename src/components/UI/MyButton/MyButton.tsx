@@ -1,17 +1,14 @@
 import React, {ButtonHTMLAttributes, DetailedHTMLProps} from 'react';
 import s from './MyButton.module.css'
 
-type ButtonPropsType = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
-
-type MyButtonPropsType = ButtonPropsType & {
-	style?: {}
+type MyButtonPropsType = {
 	onClickButton: () => void
-	disabled: boolean
+	disabled?: boolean
 }
 
-const MyButton: React.FC<MyButtonPropsType> = ({children, onClickButton, style , disabled}) => {
+const MyButton: React.FC<MyButtonPropsType> = ({children, onClickButton, disabled, ...props}) => {
 	return (
-		<button onClick={onClickButton} className={s.button} style={style} disabled={disabled}>
+		<button onClick={onClickButton} className={s.button} disabled={disabled} {...props}>
 			{children}
 		</button>
 	);
