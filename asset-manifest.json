@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "//d1msn.github.io/counter/static/css/main.d6acf578.chunk.css",
+    "main.js": "//d1msn.github.io/counter/static/js/main.ab778469.chunk.js",
+    "main.js.map": "//d1msn.github.io/counter/static/js/main.ab778469.chunk.js.map",
+    "runtime-main.js": "//d1msn.github.io/counter/static/js/runtime-main.dbaaf1f9.js",
+    "runtime-main.js.map": "//d1msn.github.io/counter/static/js/runtime-main.dbaaf1f9.js.map",
+    "static/js/2.d2768f98.chunk.js": "//d1msn.github.io/counter/static/js/2.d2768f98.chunk.js",
+    "static/js/2.d2768f98.chunk.js.map": "//d1msn.github.io/counter/static/js/2.d2768f98.chunk.js.map",
+    "static/js/3.16e511e3.chunk.js": "//d1msn.github.io/counter/static/js/3.16e511e3.chunk.js",
+    "static/js/3.16e511e3.chunk.js.map": "//d1msn.github.io/counter/static/js/3.16e511e3.chunk.js.map",
+    "index.html": "//d1msn.github.io/counter/index.html",
+    "static/css/main.d6acf578.chunk.css.map": "//d1msn.github.io/counter/static/css/main.d6acf578.chunk.css.map",
+    "static/js/2.d2768f98.chunk.js.LICENSE.txt": "//d1msn.github.io/counter/static/js/2.d2768f98.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dbaaf1f9.js",
+    "static/js/2.d2768f98.chunk.js",
+    "static/css/main.d6acf578.chunk.css",
+    "static/js/main.ab778469.chunk.js"
+  ]
+}
