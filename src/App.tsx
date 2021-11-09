@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="App">
-      <Counter minCount={0} maxCount={5} incrementCount={1} />
+      <Counter minCount={minCount} maxCount={maxCount} incrementCount={increment} />
         <div className="counter-setter">
             <input value={minCount} onChange={(e) => setMinCount(+e.currentTarget.value)} type="number"/>
             <input value={maxCount} onChange={(e) => setMaxCount(+e.currentTarget.value)} type="number"/>
