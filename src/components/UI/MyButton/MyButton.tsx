@@ -1,4 +1,4 @@
-import React, {ButtonHTMLAttributes, DetailedHTMLProps} from 'react';
+import React from 'react';
 import s from './MyButton.module.css'
 
 type MyButtonPropsType = {

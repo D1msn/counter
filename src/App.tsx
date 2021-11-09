@@ -22,15 +22,15 @@ function App() {
 			<div className="counter-setter">
 				<div className="counter-setter__min">
 					<input value={minCount} onChange={(e) => setMinCount(+e.currentTarget.value)} type="number"/>
-					Минимальное значение
+					<p>Минимальное значение</p>
 				</div>
 				<div className="counter-setter__max">
 					<input value={maxCount} onChange={(e) => setMaxCount(+e.currentTarget.value)} type="number"/>
-					Максимальное значение
+					<p>Максимальное значение</p>
 				</div>
-				<div className="counter-setter__imcrement">
+				<div className="counter-setter__increment">
 					<input value={increment} onChange={pushIncrement} type="number"/>
-					Шаг
+					<p>Шаг</p>
 				</div>
 			</div>
 		</div>
